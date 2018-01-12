@@ -6,30 +6,30 @@ using System.Threading.Tasks;
 
 namespace FavoriteThings
 {
-    class Puppy
+    class Soup
     {
-        protected string _breed;
-        protected string _size;
-        public string breed
+        protected string _type;
+        protected string _spiceLevel;
+        public string Type
         {
             get
             {
-                return $"This puppy is a {_breed}";
+                return $"This is {_type} soup.";
             }
             set
             {
-                _breed = value;
+                _type = value;
             }
         }
-        public string size
+        public string SpiceLevel
         {
             get
             {
-                return _size;
+                return $"This soup is {_spiceLevel} spicy.";
             }
             set
             {
-                _size = value;
+                _spiceLevel = value;
             }
         }
     }

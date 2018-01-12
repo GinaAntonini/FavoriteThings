@@ -10,6 +10,7 @@ namespace FavoriteThings
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("My favorite things are puppies, parks, and ramen. And other things.");
         }
     }
 }

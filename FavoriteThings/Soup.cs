@@ -1,15 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace FavoriteThings
+namespace FavoriteThings.Favorites
 {
     class Soup
     {
         protected string _type;
         protected string _spiceLevel;
+        protected bool _isVegetarian;
         public string Type
         {
             get
@@ -30,6 +27,29 @@ namespace FavoriteThings
             set
             {
                 _spiceLevel = value;
+            }
+        }
+        public Soup()  // Constructor Method
+        {
+            _type = Type;
+        }
+
+        public bool IsVegetarian
+        {
+            get
+            {
+                return _isVegetarian;
+            }
+            set
+            {
+                if (value)
+                {
+                    _isVegetarian = true;
+                }
+                if (!value)
+                {
+                    _isVegetarian = false;
+                }
             }
         }
     }

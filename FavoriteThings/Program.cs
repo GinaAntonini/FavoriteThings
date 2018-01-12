@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using FavoriteThings.Favorites;
 
 namespace FavoriteThings
 {
@@ -10,7 +7,29 @@ namespace FavoriteThings
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("My favorite things are puppies, parks, and ramen. And other things.");
+            var puppy = new Puppy
+            {
+                Breed = "German Shepherd",
+                Size = "Medium",
+                IsHypoallergenic = false
+            };
+
+            var park = new Park
+            {
+                Area = "East Nashville",
+                Name = "Two Rivers Waterpark",
+                OpenInWinter = false
+            };
+
+            var soup = new Soup
+            {
+                Type = "Vegetarian Chili", 
+                SpiceLevel = "Ghost pepper hot",
+                IsVegetarian = true
+            };
+
         }
+
     }
 }
+

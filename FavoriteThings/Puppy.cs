@@ -1,16 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace FavoriteThings
+namespace FavoriteThings.Favorites
+
 {
     class Puppy
     {
         protected string _breed;
         protected string _size;
-        public string breed
+        protected bool _isHypoallergenic;
+        public string Breed
         {
             get
             {
@@ -21,7 +19,7 @@ namespace FavoriteThings
                 _breed = value;
             }
         }
-        public string size
+        public string Size
         {
             get
             {
@@ -30,6 +28,29 @@ namespace FavoriteThings
             set
             {
                 _size = value;
+            }
+        }
+        public Puppy()  
+        {
+            _breed = Breed;
+        }
+
+        public bool IsHypoallergenic
+        {
+            get
+            {
+                return _isHypoallergenic;
+            }
+            set
+            {
+                if (value)
+                {
+                    _isHypoallergenic = true;
+                }
+                if (!value)
+                {
+                    _isHypoallergenic = false;
+                }
             }
         }
     }

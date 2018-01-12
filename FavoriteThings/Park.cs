@@ -1,15 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace FavoriteThings
+namespace FavoriteThings.Favorites
 {
     class Park
     {
         protected string _area;
         protected string _name;
+        protected bool _openInWinter;
         public string Area
         {
             get
@@ -32,6 +29,29 @@ namespace FavoriteThings
                 _name = value;
             }
         }
+        public Park()  // Constructor Method
+        {
+            _name = Name;
+        }
 
+        public bool OpenInWinter
+        {
+            get
+            {
+                return _openInWinter;
+            }
+            set
+            {
+                if (value)
+                {
+                    _openInWinter = true;
+                }
+                if (!value)
+                {
+                    _openInWinter = false;
+                }
+            }
+
+        }
     }
 }

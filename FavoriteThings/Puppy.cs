@@ -30,7 +30,7 @@ namespace FavoriteThings.Favorites
                 _size = value;
             }
         }
-        public Puppy()  
+        public Puppy()  //Constructor Method
         {
             _breed = Breed;
         }
@@ -52,6 +52,16 @@ namespace FavoriteThings.Favorites
                     _isHypoallergenic = false;
                 }
             }
+        }
+        public string InducingSneezes(bool IsHypoallergenic)
+        {
+            if (!IsHypoallergenic)
+            {
+                Console.WriteLine($"{_breed} makes me sneeze.");
+                return "This dog is definitely not allergy friendly.";
+            }
+            Console.WriteLine($"{_breed} doesn't make me sneeze!");
+            return "We can get this dog!";
         }
     }
 }

@@ -29,9 +29,9 @@ namespace FavoriteThings.Favorites
                 _name = value;
             }
         }
-        public Park()  // Constructor Method
+        public Park() //Constructor Method
         {
-            _name = Name;
+            _area = Area;
         }
 
         public bool OpenInWinter
@@ -52,6 +52,16 @@ namespace FavoriteThings.Favorites
                 }
             }
 
+        }
+        public string WinterParkSearch(bool OpenInWinter)
+        {
+            if (!OpenInWinter)
+            {
+                Console.WriteLine($"{_name} is empty.");
+                return "It's a warm weather park.";
+            }
+            Console.WriteLine($"{_name} is open for business.");
+            return "Winter friendly!";
         }
     }
 }

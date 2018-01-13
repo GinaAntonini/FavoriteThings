@@ -13,6 +13,7 @@ namespace FavoriteThings
                 Size = "Medium",
                 IsHypoallergenic = false
             };
+            puppy.InducingSneezes(puppy.IsHypoallergenic);
 
             var park = new Park
             {
@@ -20,6 +21,7 @@ namespace FavoriteThings
                 Name = "Two Rivers Waterpark",
                 OpenInWinter = false
             };
+            park.WinterParkSearch(park.OpenInWinter);
 
             var soup = new Soup
             {
@@ -27,7 +29,7 @@ namespace FavoriteThings
                 SpiceLevel = "Ghost pepper hot",
                 IsVegetarian = true
             };
-
+            soup.VegetarianSafety(soup.IsVegetarian);
         }
 
     }

@@ -52,5 +52,15 @@ namespace FavoriteThings.Favorites
                 }
             }
         }
+        public string VegetarianSafety(bool IsVegetarian)
+        {
+            if (!IsVegetarian)
+            {
+                Console.WriteLine($"{_type} has meat in it.");
+                return "Not safe for vegetarians!";
+            }
+            Console.WriteLine($"{_type} is meat free.");
+            return "Vegetarians may proceed.";
+        }
     }
 }

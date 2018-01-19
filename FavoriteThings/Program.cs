@@ -29,6 +29,7 @@ namespace FavoriteThings
 
             foreach (var park in parks)
             {
+                Console.WriteLine($"{park.Name} is {(park.OpenInWinter ? "open in winter" : "closed until summer")}");
             }
 
             var soups = new List<Soup>
@@ -40,6 +41,7 @@ namespace FavoriteThings
 
             foreach (var soup in soups)
             {
+                Console.WriteLine($"{soup.Type} is {(soup.IsVegetarian ? "safe for the vegetarians" : "made with meat.")}");
             }
 
             var foods = new List<Food>
@@ -51,6 +53,7 @@ namespace FavoriteThings
 
             foreach (var food in foods)
             {
+                Console.WriteLine($"{food.Cuisine} food {(food.EatWithHands ? "can be eaten with your hands." : "requires utensils")}");
             }
         }
 

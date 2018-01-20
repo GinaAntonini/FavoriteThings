@@ -11,7 +11,7 @@ namespace FavoriteThings.Favorites
         {
             get
             {
-                return $"This park is located in {_area}";
+                return _area;
             }
             set
             {

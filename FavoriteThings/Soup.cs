@@ -11,7 +11,7 @@ namespace FavoriteThings.Favorites
         {
             get
             {
-                return $"This is {_type} soup.";
+                return _type;
             }
             set
             {

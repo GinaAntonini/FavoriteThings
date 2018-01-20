@@ -12,7 +12,7 @@ namespace FavoriteThings.Favorites
         {
             get
             {
-                return $"This puppy is a {_breed}";
+                return _breed;
             }
             set
             {
